@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build AdventureWorks2019",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"c:/Projetos/costdrivers_database/AdventureWorks2019/AdventureWorks2019.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the AdventureWorks2019 SQL project"
+		}
+	]
+}
